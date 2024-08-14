@@ -1,0 +1,19 @@
+.button {
+  min-width: 130px;
+  height: 40px;
+  color: var(--kg-color-primary);
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: var(--kg-radius-md);
+  border: 2px solid var(--kg-color-terciary);
+  background:var(--kg-color-terciary);
+}
+.button:hover {
+  background:var(--kg-color-secondary);
+  border: 2px solid var(--kg-color-secondary);
+  color: var(--kg-color-terciary);
+}
