@@ -1,0 +1,69 @@
+.tresEnRaya-Section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--kg-gap-xl);
+}
+
+.bodySection{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: var(--kg-gap-xl);
+}
+
+.aside{
+  display: flex;
+  flex-direction: column;
+  gap: var(--kg-gap-lg);
+}
+
+.score-container{
+  display: flex;
+  flex-direction: column;
+  gap: var(--kg-gap-lg);
+
+}
+.shift{
+  color: var(--kg-color-terciary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: var(--kg-gap-sm);
+  background-color: var(--kg-color-secondary);
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  font-family: var(--kg-font-family-secondary);
+  background-color:var(--kg-color-primary);
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+.cell.taken {
+  pointer-events: none;
+}
+
+.cell.x {
+  color: var(--kg-color-light);
+}
+
+.cell.o {
+  color: var(--kg-color-terciary);
+}
+
+.dark {
+  background-color: var(--kg-bg-secondary);
+  color: var(--kg-text-primary);
+}
