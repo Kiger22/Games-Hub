@@ -1,0 +1,73 @@
+.hangmanSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--kg-gap-lg);
+  margin-top: 110px;
+  height: 100%;
+}
+
+.bodySectionHangman{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: var(--kg-gap-lg);
+  align-items: center;
+  text-align: center;
+}
+.bodyGameHangman{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--kg-gap-md);
+}
+
+.score{
+  text-align: center;
+  line-height: 2.5;
+}
+
+#secret-word {
+  font-size: var(--kg-font-size-h2);
+  letter-spacing: 5px;
+  margin:20px 0;
+  color: var(--kg-color-terciary);
+}
+
+.letter {
+  display: inline-block;
+  width: 20px;
+  border-bottom: 2px solid #000;
+}
+
+#incorrect-letters {
+  margin-top: 20px;
+  color: var(--kg-color-light);
+}
+
+#message {
+  margin-top: 20px;
+  font-size: var(--kg-font-size-text);
+}
+
+#restart {
+  min-width: 130px;
+  height: 40px;
+  color: var(--kg-color-primary);
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: var(--kg-radius-md);
+  border: 2px solid var(--kg-color-terciary);
+  background:var(--kg-color-terciary);
+}
+
+#restart:hover {
+  background:var(--kg-color-secondary);
+  border: 2px solid var(--kg-color-secondary);
+  color: var(--kg-color-terciary);
+}
