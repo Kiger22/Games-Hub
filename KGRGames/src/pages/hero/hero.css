@@ -1,0 +1,47 @@
+.heroSection{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+gap: var(--kg-gap-lg);
+height: 100%;
+}
+
+.bodySectionHero {
+  display: flex;
+  justify-content: center;
+  gap: var(--kg-gap-xxl);
+  padding: var(--kg-padding-md);
+}
+
+.game-card {
+  text-align: center;
+  background-color: var(--kg-color-primary);
+  border-radius: var(--kg-radius-md);
+  overflow: hidden;
+  width: 12rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.game-card:hover{
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.game-card img {
+  padding: var(--kg-padding-md);
+  width: 100%;
+  object-fit: cover;
+}
+
+.game-card h3 {
+  color: var(--kg-color-terciary);
+  margin: 10px 15px 0 15px;
+  font-size: var(--kg-font-size-h3);
+}
+
+.game-card p {
+  margin: 20px 15px 15px 15px;
+  color: var(--kg-color-light);
+  font-size: small;
+}
