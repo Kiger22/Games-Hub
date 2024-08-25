@@ -4,13 +4,15 @@ flex-direction: column;
 align-items: center;
 justify-content: space-around;
 gap: var(--kg-gap-lg);
-height: 100%;
+height: 80%;
 }
 
 .bodySectionHero {
+  margin: 10px auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: var(--kg-gap-xxl);
+  gap: var(--kg-gap-xl);
   padding: var(--kg-padding-md);
 }
 
@@ -43,5 +45,17 @@ height: 100%;
 .game-card p {
   margin: 20px 15px 15px 15px;
   color: var(--kg-color-light);
-  font-size: small;
+  font-size:x-small;
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+ 
+}
+
+/* Estilos para móviles */
+@media (max-width: 767px) {
+  .heroSection{
+margin-bottom: 200px;
+    }
 }

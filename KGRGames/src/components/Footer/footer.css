@@ -4,7 +4,6 @@
   justify-content: space-around;
   align-items: center ;
   background-color: var(--kg-bg-primary) ;
-opacity: 0.7;
   color: var(--kg-text-secondary);
   text-align: center;
   padding: 10px 60px;
@@ -62,7 +61,26 @@ opacity: 0.7;
   width: 1.5rem;
 }
 
-.dark {
-  background-color: var(--kg-bg-terciary);
-  color: var(--kg-text-primary);
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .social-icon {
+    width: 1rem;
+  }
+  .footer-logo img {
+    width: 8rem;
+   }
+}
+
+/* Estilos para móviles */
+@media (max-width: 767px) {
+.copyright{
+  display: none;
+}
+.footer-logo img {
+  width: 6rem;
+ }
+ .social-icon {
+  width: 0.7rem;
+}
 }

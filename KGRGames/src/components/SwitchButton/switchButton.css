@@ -1,13 +1,13 @@
 .switch-container{
+  cursor: pointer;
   position: fixed;
-  bottom:20px;
-  left: 20px;
+  bottom:100px;
+  left: 100px;
   z-index: 4;
 }
 
 #switch,
 #circle {
-
   height: 30px;
   transition: all 0.4s cubic-bezier(0.54, 1.6, 0.5, 1);
   transition: all 0.4s cubic-bezier(0.54, 1.6, 0.5, 1);
@@ -15,7 +15,6 @@
 
 #switch {
   width: 50px;
-  left: 50px;
   border: 3px solid var(--kg-bg-terciary);
   border-radius: 27px;
   background: var(--kg-bg-primary);
@@ -42,14 +41,15 @@
 }
 
 @media (max-width: 900px) {
-  .switch-conteiner{
-    position: fixed;
-    top: 40px;
-    right: 100px;
-    z-index: 4;
+  .switch-container{
+    bottom:100px;
+left: 50px;
   }
 } 
 
 @media (max-width: 500px) {
-
+  .switch-container{
+    bottom:100px;
+    left: 20px;
+  }
 } 

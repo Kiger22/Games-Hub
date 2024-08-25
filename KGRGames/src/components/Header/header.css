@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 250px;
   align-items: center;
   background-color: var(--kg-bg-primary);
   color: var(--kg-text-terciary);
@@ -14,8 +13,7 @@
 
 .header-logo img {
   width: 5rem;
-  margin-top:20px;
-  margin-left: 50px;
+  margin:20px 50px;
 }
 
 .header-logo:hover {
@@ -37,6 +35,11 @@
   color: var(--kg-text-secondary);
 }
 
+.header-menu img,
+.header-menu-login img {
+  width: 2rem;
+}
+
 .header-menu a:hover,
 .header-menu-login a:hover {
   transform: scale(1.1);
@@ -44,17 +47,8 @@
   text-shadow: 0 0 30px var(--kg-text-primary);
 }
 
-.dark {
-  background-color: var(--kg-bg-terciary);
-  color: var(--kg-text-primary);
-}
-
 @media (max-width: 900px) {
-  .header-menu, 
-  .header-menu-login{
-    display: none;
-  
-  }
+
 } 
 
 @media (max-width: 500px) {

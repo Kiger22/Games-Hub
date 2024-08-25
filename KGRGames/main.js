@@ -17,14 +17,12 @@ heroPage();
 
 createFooter(footerLogo, menuFooter, socialLinks);
 
-/* SwitchButton();
-const switchButton = document.querySelector("#switch")
-const fullpage = document.querySelector("body");
-const footer = document.querySelector("footer");
+SwitchButton();
+const switchButton = document.querySelector("#switch");
 const header = document.querySelector("header");
-const section = document.querySelector("section");
-switchButton.addEventListener("click", () => toggletheme(fullpage));
-//switchButton.addEventListener("click", () => toggletheme(footer));
+const footer = document.querySelector("footer");
+const fullPage = document.querySelector("body");
 switchButton.addEventListener("click", () => toggletheme(header));
-switchButton.addEventListener("click", () => toggletheme(section));
-switchButton.addEventListener("click", () => toggletheme(divApp)); */
+switchButton.addEventListener("click", () => toggletheme(footer));
+switchButton.addEventListener("click", () => toggletheme(divApp));
+switchButton.addEventListener("click", () => toggletheme(fullPage));

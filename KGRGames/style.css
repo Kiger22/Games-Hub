@@ -72,6 +72,9 @@
   font-family: var(--kg-font-primary);
   font-weight: 400;
   font-style: normal;
+}
+
+body{
   background: var(--kg-bg-primary);
   color: var(--kg-text-secondary);
 }
@@ -103,7 +106,12 @@ a {
 }
 
 section{
-  margin-top: 100px;
+  margin:110px auto;
+}
+
+.dark {
+  background-color: var(--kg-bg-secondary);
+  color: var(--kg-text-primary);
 }
 
  #app{
@@ -112,12 +120,7 @@ section{
   margin: auto ;
  }
 
- .dark {
-  background-color: var(--kg-bg-secondary);
-  color: var(--kg-text-primary);
-}
-
- .section-tittle{
+.section-tittle{
   font-size: var(--kg-font-size-h2);
  }
 

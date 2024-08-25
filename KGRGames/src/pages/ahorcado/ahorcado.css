@@ -15,6 +15,7 @@
   align-items: center;
   text-align: center;
 }
+
 .bodyGameHangman{
   display: flex;
   flex-direction: column;
@@ -70,4 +71,22 @@
   background:var(--kg-color-secondary);
   border: 2px solid var(--kg-color-secondary);
   color: var(--kg-color-terciary);
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bodySectionHangman{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilos para móviles */
+@media (max-width: 767px) {
+  .bodySectionHangman{
+    grid-template-columns: 1fr;
+  }
+  #secret-word {
+    font-size: var(--kg-font-size-link);
+    letter-spacing: 2px;
+  }
 }
