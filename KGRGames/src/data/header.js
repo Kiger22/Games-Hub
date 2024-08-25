@@ -1,5 +1,5 @@
-import { loginForm } from "../../actions/loginModal";
-import { pauseGame } from "../../actions/pauseGame";
+
+import { createLoginForm } from "../components/LoginForm/loginForm";
 import { createHero } from "../pages/hero/hero";
 
 export const meniItemsMenuToggle = [
@@ -8,13 +8,13 @@ export const meniItemsMenuToggle = [
 
 export const menuItemsHeaderI = [
   {
+    icon: "./assets/user (2).png", text: "Login", href: createLoginForm,
+  },
+  {
     icon: "./assets/shop (2).png", text: "Home", href: createHero,
   },
   {
-    icon: "./assets/user (2).png", text: "Login", href: loginForm,
-  },
-  {
-    icon: "./assets/pause (2).png", text: "Pause", href: pauseGame,
+    icon: "./assets/pause (2).png", text: "Pause", href: "#",
   }
 ];
 

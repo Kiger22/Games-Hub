@@ -10,7 +10,7 @@
   /* Colors */
 
   --kg-color-white: #fdfcfc;
-  --kg-color-light: #3c54b2;
+  --kg-color-light: rgb(60, 84, 178);
   --kg-color-dark: #000000;
   --kg-color-primary: #151d3c;
   --kg-color-secondary: #e5aed2;
@@ -34,7 +34,7 @@
   --kg-font-size-h2: 2.1875em;
   --kg-font-size-h3: 1.3625em;
   --kg-font-size-text: 1.25em;
-  --kg-font-size-link: 1.25em;
+  --kg-font-size-link: 0.95em;
 
   /* Gap */
   --kg-gap-xxl: 100px;

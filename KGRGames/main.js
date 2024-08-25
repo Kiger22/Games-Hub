@@ -1,6 +1,7 @@
 import { toggletheme } from './actions/toggleTheme';
 import { createFooter } from './src/components/Footer/footer';
-import { createHeader } from './src/components/Header/header'
+import { createHeader } from './src/components/Header/header';
+import { createLoginForm } from './src/components/LoginForm/loginForm';
 import { SwitchButton } from './src/components/SwitchButton/switchButton';
 import { footerLogo, menuFooter, socialLinks } from './src/data/footer';
 import { heaterLogo, menuItemsHeaderI } from './src/data/header'
