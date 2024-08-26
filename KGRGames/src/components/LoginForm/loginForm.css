@@ -33,7 +33,7 @@ form p {
 }
 form a {
   text-decoration: none;
-  color: var(--kg--font-family-terciary);
+  color: var(--kg--font-family-tertiary);
   font-size: var(--kg-font-size-link);
   margin-top: 30px;
 }
@@ -55,7 +55,7 @@ form input {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
-  color: var(--kg--font-family-terciary);
+  color: var(--kg--font-family-tertiary);
   font-weight: 500;
   transition: all 0.2s ease-in-out;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -85,19 +85,19 @@ form:hover {
 
 ::-moz-placeholder {
   font-weight: 400;
-  color:var(--kg--font-family-terciary);
+  color:var(--kg--font-family-tertiary);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 :-ms-input-placeholder {
   font-weight: 400;
-  color:var(--kg--font-family-terciary);
+  color:var(--kg--font-family-tertiary);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 ::placeholder {
   font-weight: 400;
-  color: var(--kg--font-family-terciary);
+  color: var(--kg--font-family-tertiary);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -152,4 +152,6 @@ select:focus,
 textarea:focus,
 button:focus {
   outline: none;
-}                                        
+}          
+
+

@@ -15,7 +15,7 @@
 
 #switch {
   width: 50px;
-  border: 3px solid var(--kg-bg-terciary);
+  border: 3px solid var(--kg-bg-tertiary);
   border-radius: 27px;
   background: var(--kg-bg-primary);
   position: relative;
@@ -27,12 +27,12 @@
   width: 40%;
   height: 80%;
   border-radius: 50%;
-  background: var(--kg-bg-terciary);
+  background: var(--kg-bg-tertiary);
 }
 
 .switched {
   border-color: var(--kg-bg-primary) !important;
-  background: var(--kg-bg-terciary) !important;
+  background: var(--kg-bg-tertiary) !important;
 }
 
 .switched #circle {

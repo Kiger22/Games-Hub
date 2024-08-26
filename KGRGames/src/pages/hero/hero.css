@@ -37,7 +37,7 @@ height: 80%;
 }
 
 .game-card h3 {
-  color: var(--kg-color-terciary);
+  color: var(--kg-color-tertiary);
   margin: 10px 15px 0 15px;
   font-size: var(--kg-font-size-h3);
 }

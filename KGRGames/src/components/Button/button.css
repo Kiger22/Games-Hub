@@ -9,11 +9,11 @@
   display: inline-block;
   outline: none;
   border-radius: var(--kg-radius-md);
-  border: 2px solid var(--kg-color-terciary);
-  background:var(--kg-color-terciary);
+  border: 2px solid var(--kg-color-tertiary);
+  background:var(--kg-color-tertiary);
 }
 .button:hover {
   background:var(--kg-color-secondary);
   border: 2px solid var(--kg-color-secondary);
-  color: var(--kg-color-terciary);
+  color: var(--kg-color-tertiary);
 }

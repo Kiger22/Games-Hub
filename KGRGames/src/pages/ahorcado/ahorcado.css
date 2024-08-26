@@ -33,7 +33,7 @@
   font-size: var(--kg-font-size-h2);
   letter-spacing: 5px;
   margin:20px 0;
-  color: var(--kg-color-terciary);
+  color: var(--kg-color-tertiary);
 }
 
 .letter {
@@ -63,14 +63,14 @@
   display: inline-block;
   outline: none;
   border-radius: var(--kg-radius-md);
-  border: 2px solid var(--kg-color-terciary);
-  background:var(--kg-color-terciary);
+  border: 2px solid var(--kg-color-tertiary);
+  background:var(--kg-color-tertiary);
 }
 
 #restart:hover {
   background:var(--kg-color-secondary);
   border: 2px solid var(--kg-color-secondary);
-  color: var(--kg-color-terciary);
+  color: var(--kg-color-tertiary);
 }
 
 /* Estilos para tablets */

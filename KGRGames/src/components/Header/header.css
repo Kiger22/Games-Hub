@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--kg-bg-primary);
-  color: var(--kg-text-terciary);
+  color: var(--kg-text-tertiary);
   width: 100%;
   position: fixed;
   top: 0;
@@ -52,5 +52,17 @@
 } 
 
 @media (max-width: 500px) {
+  .header-menu img,
+  .header-menu-login img {
+    width: 1.3rem;
+  }
+  .header-logo img {
+    width: 3rem;
+    margin:20px 40px;
+  }
+  .header-menu, 
+.header-menu-login{
+  margin-right: 3rem;
+}
 
 } 

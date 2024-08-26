@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Press+Start+2P&display=swap');
-:root {
+@import url('https://fonts.googleapis.com/css?family=Jockey%20One:700|Jockey%20One:400');
 
+:root {
   /* Fonts */
   --kg-font-primary: "Press Start 2P", system-ui;
+  --kg-font-family-primary: "Jockey One";
   --kg-font-family-secondary: 'Ubuntu',sans-serif;
-  --kg--font-family-terciary: "New Amsterdam", sans-serif;
+  --kg--font-family-tertiary: "New Amsterdam", sans-serif;
   /* Colors */
 
   --kg-color-white: #fdfcfc;
@@ -14,12 +16,12 @@
   --kg-color-dark: #000000;
   --kg-color-primary: #151d3c;
   --kg-color-secondary: #e5aed2;
-  --kg-color-terciary: #ab3582;
+  --kg-color-tertiary: #ab3582;
  
   /* Backgrounds */
   --kg-bg-primary: var(--kg-color-primary);
   --kg-bg-secondary: var(--kg-color-secondary);
-  --kg-bg-terciary:var(--kg-color-terciary);
+  --kg-bg-tertiary:var(--kg-color-tertiary);
   --kg-bg-dark:var(--kg-color-dark);
   --kg-bg-light:var(--kg-color-light);
   
@@ -52,7 +54,7 @@
   /* Margin */
   --kg-margin-xl: 60px;
   --kg-margin-lg: 30px;
-  --kg-matgin-md: 20px;
+  --kg-margin-md: 20px;
   --kg-margin-sm: 10px;
 
   --kg-margin-section: 130px;
@@ -69,7 +71,7 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: var(--kg-font-primary);
+  font-family: var(--kg-font-family-primary);
   font-weight: 400;
   font-style: normal;
 }
@@ -139,11 +141,11 @@ section{
   display: inline-block;
   outline: none;
   border-radius: var(--kg-radius-md);
-  border: 2px solid var(--kg-color-terciary);
-  background:var(--kg-color-terciary);
+  border: 2px solid var(--kg-color-tertiary);
+  background:var(--kg-color-tertiary);
 }
 .button:hover {
   background:var(--kg-color-secondary);
   border: 2px solid var(--kg-color-secondary);
-  color: var(--kg-color-terciary);
+  color: var(--kg-color-tertiary);
 }
