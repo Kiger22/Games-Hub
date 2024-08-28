@@ -14,7 +14,7 @@ export const menuItemsHeaderI = [
     icon: "./assets/icons8-casa.svg", text: "Home", href: createHero,
   },
   {
-    icon: "./assets/pause-circle_10436074.svg", text: "Pause", href: "#",
+    icon: "./assets/pause-circle_10436074.svg", text: "Pause", href: createLoginForm,
   }
 ];
 

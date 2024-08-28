@@ -111,19 +111,20 @@ export const playSnake = () => {
   const directionEvent = key => {
     switch (key.code) {
       case "ArrowUp":
-        direction != "ArrowDown" && setDirection(key.code)
+        if (direction !== "ArrowDown") setDirection(key.code);
         break;
       case "ArrowDown":
-        direction != "ArrowUp" && setDirection(key.code)
+        if (direction !== "ArrowUp") setDirection(key.code);
         break;
       case "ArrowLeft":
-        direction != "ArrowRight" && setDirection(key.code)
+        if (direction !== "ArrowRight") setDirection(key.code);
         break;
       case "ArrowRight":
-        direction != "ArrowLeft" && setDirection(key.code)
+        if (direction !== "ArrowLeft") setDirection(key.code);
         break;
     }
   }
+
 
   // Crea comida aleatoriamente en el tablero
   const createRandomFood = () => {
