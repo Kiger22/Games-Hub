@@ -50,12 +50,14 @@
   --kg-padding-lg: 30px;
   --kg-padding-md: 20px;
   --kg-padding-sm: 10px;
+  --kg-padding-xs: 5px;
 
   /* Margin */
   --kg-margin-xl: 60px;
   --kg-margin-lg: 30px;
   --kg-margin-md: 20px;
   --kg-margin-sm: 10px;
+  --kg-margin-xs: 5px;
 
   --kg-margin-section: 130px;
 

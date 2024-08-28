@@ -27,6 +27,59 @@ export const snakePage = () => {
   board.id = "board";
   bodySection.appendChild(board);
 
+  //? Implementar controles de movimiento del snake para móviles
+
+  const bodyControls = document.createElement("div");
+  bodyControls.id = "bodyControls";
+  bodySection.appendChild(bodyControls);
+
+  // Crear el contenedor para los controles
+  const controlsContainer = document.createElement("div");
+  controlsContainer.id = "controls";
+  bodyControls.appendChild(controlsContainer);
+
+  const setDirection = (newDirection) => {
+    localStorage.setItem("direction", newDirection);
+  };
+
+  // Crear botones de flechas
+  const upBtn = document.createElement("button");
+  upBtn.id = "upBtn";
+  upBtn.innerHTML = "▲";
+  upBtn.addEventListener("click", () => {
+    setDirection("ArrowUp");
+  });
+
+  const downBtn = document.createElement("button");
+  downBtn.id = "downBtn";
+  downBtn.innerHTML = "▼";
+  downBtn.addEventListener("click", () => {
+    setDirection("ArrowDown");
+  });
+
+  const leftBtn = document.createElement("button");
+  leftBtn.id = "leftBtn";
+  leftBtn.innerHTML = "◀";
+  leftBtn.addEventListener("click", () => {
+    setDirection("ArrowLeft");
+  });
+
+  const rightBtn = document.createElement("button");
+  rightBtn.id = "rightBtn";
+  rightBtn.innerHTML = "▶";
+  rightBtn.addEventListener("click", () => {
+    setDirection("ArrowRight");
+  });;
+
+  // Agregar botones al contenedor
+  controlsContainer.appendChild(upBtn);
+
+  const middleRow = document.createElement("div");
+  middleRow.appendChild(leftBtn);
+  middleRow.appendChild(downBtn);
+  middleRow.appendChild(rightBtn);
+  controlsContainer.appendChild(middleRow);
+
   // Información del Juego
   const boardInfo = document.createElement("div");
   boardInfo.className = "boardInfo";
@@ -62,5 +115,5 @@ export const snakePage = () => {
 
   //Funcionalidad del juego
   playSnake();
-
 };
+

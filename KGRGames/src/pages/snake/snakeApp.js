@@ -22,7 +22,7 @@ export const playSnake = () => {
   let snake;
   let score = 0;
   let maxScore = localStorage.getItem("maxScore") || 0;
-  let direction;
+  let direction = localStorage.getItem("direction") || "ArrowRight";
   let boardSquares;
   let emptySquares;
   let moveInterval;
@@ -105,6 +105,7 @@ export const playSnake = () => {
   // Establece la nueva dirección de la serpiente
   const setDirection = newDirection => {
     direction = newDirection;
+    localStorage.setItem("direction", newDirection);
   }
 
   // Controla los eventos de teclado para cambiar la dirección
