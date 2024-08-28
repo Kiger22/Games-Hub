@@ -14,7 +14,7 @@
 
 .bodySectionSnake{
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   justify-content: center;
   align-items: center;
   gap: var(--kg-gap-xxl);
@@ -22,8 +22,20 @@
 
 #board {
   display: grid;
+  /* grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20,1fr); */
   grid-template-columns: repeat(10, 1fr);
   border: var(--kg-color-secondary) solid 1px;
+}
+
+#startMessage {
+/*   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  font-size: var(--kg-font-size-text);
+  color: var(--kg-color-tertiary);
+  visibility: visible;
 }
 
 #gameOver {

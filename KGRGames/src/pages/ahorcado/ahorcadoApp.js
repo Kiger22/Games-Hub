@@ -11,20 +11,20 @@ let losses = localStorage.getItem("losses") ? parseInt(localStorage.getItem("los
 
 // Actualizar Scores
 const updateScoreDisplay = () => {
-  document.querySelector("#score").textContent = `Victorias: ${wins}
-  Derrotas: ${losses}`;
+  document.querySelector("#score").innerHTML = `<p>Victorias: ${wins}</p><p>Derrotas: ${losses}</p>`;
+
 };
 
-// Guardar Sacores
+// Guardar Scores
 const saveScores = () => {
   localStorage.setItem("wins", wins);
   localStorage.setItem("losses", losses);
 };
 
-// Selecciona una palabra aleatoria
+// Selecciona una palabra aleatoria del array
 const selectWord = () => words[Math.floor(Math.random() * words.length)];
 
-// Inicia el juego
+// Inicia/Reinicia el juego
 export const startGame = () => {
   secretWord = selectWord();
   attempts = 0;
@@ -89,4 +89,3 @@ const handleKeyPress = (e) => {
 const endGame = () => {
   window.removeEventListener("keypress", handleKeyPress);
 };
-

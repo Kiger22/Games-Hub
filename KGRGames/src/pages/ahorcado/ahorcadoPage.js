@@ -5,18 +5,18 @@ import { startGame } from "./ahorcadoApp";
 export const ahorcadoPage = () => {
   divApp.innerHTML = "";
 
-  //Seccion
+  //Sección
   const hangmanSection = document.createElement("section");
   hangmanSection.className = "hangmanSection";
   divApp.appendChild(hangmanSection);
 
-  //Titulo de seccion
+  //Titulo de sección
   const sectionTitlle = document.createElement("h1");
   sectionTitlle.classList = "section-tittle";
   sectionTitlle.innerText = "Hangman Game";
   hangmanSection.appendChild(sectionTitlle);
 
-  //Cuerpo de la seccion
+  //Cuerpo de la sección
   const bodySection = document.createElement("div");
   bodySection.className = "bodySectionHangman";
   bodySection.id = "body-section-hangman";
@@ -27,35 +27,35 @@ export const ahorcadoPage = () => {
   bodyGame.id = "body-game-hangman";
   bodySection.appendChild(bodyGame);
 
-  //contenedor del Sacore
+  //contenedor del Score
   const scoreDiv = document.createElement("div");
   scoreDiv.className = "score";
   scoreDiv.id = "score";
   bodySection.appendChild(scoreDiv);
 
   //Contenedor de palabra
-  const palabraSecretaDiv = document.createElement("div");
-  palabraSecretaDiv.classNamee = "secret-word";
-  palabraSecretaDiv.id = "secret-word";
-  bodyGame.appendChild(palabraSecretaDiv);
+  const secretWordDiv = document.createElement("div");
+  secretWordDiv.className = "secret-word";
+  secretWordDiv.id = "secret-word";
+  bodyGame.appendChild(secretWordDiv);
 
   //Letra incorrecta
-  const letrasIncorrectasDiv = document.createElement("div");
-  letrasIncorrectasDiv.id = "incorrect-letters";
-  letrasIncorrectasDiv.className = "incorrect-letters";
-  bodyGame.appendChild(letrasIncorrectasDiv);
+  const incorrectLetterDiv = document.createElement("div");
+  incorrectLetterDiv.id = "incorrect-letters";
+  incorrectLetterDiv.className = "incorrect-letters";
+  bodyGame.appendChild(incorrectLetterDiv);
 
-  const mensajeDiv = document.createElement("div");
-  mensajeDiv.className = "message";
-  mensajeDiv.id = "message";
-  bodyGame.appendChild(mensajeDiv);
+  const messageDiv = document.createElement("div");
+  messageDiv.className = "message";
+  messageDiv.id = "message";
+  bodyGame.appendChild(messageDiv);
 
-  const botonReiniciar = document.createElement("button");
-  botonReiniciar.className = "restart";
-  botonReiniciar.id = "restart";
-  botonReiniciar.textContent = "Reiniciar";
-  botonReiniciar.addEventListener("click", startGame);
-  bodyGame.appendChild(botonReiniciar);
+  const restartButton = document.createElement("button");
+  restartButton.className = "restart";
+  restartButton.id = "restart";
+  restartButton.textContent = "Reiniciar";
+  restartButton.addEventListener("click", startGame);
+  bodyGame.appendChild(restartButton);
 
   startGame();
 

@@ -11,7 +11,7 @@
 .bodySectionHangman{
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: var(--kg-gap-lg);
+  gap: var(--kg-gap-xxl);
   align-items: center;
   text-align: center;
 }

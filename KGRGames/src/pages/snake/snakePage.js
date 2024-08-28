@@ -5,18 +5,18 @@ import { playSnake } from "./snakeApp";
 export const snakePage = () => {
   divApp.innerHTML = "";
 
-  //Seccion
+  //Sección
   const snakeSection = document.createElement("section");
   snakeSection.className = "snakeSection";
   divApp.appendChild(snakeSection);
 
-  //Titulo de seccion
+  //Titulo de sección
   const sectionTitlle = document.createElement("h1");
   sectionTitlle.classList = "section-tittle";
   sectionTitlle.innerText = "Nokia Snake";
   snakeSection.appendChild(sectionTitlle);
 
-  //Cuerpo de la seccion
+  //Cuerpo de la sección
   const bodySection = document.createElement("div");
   bodySection.className = "bodySectionSnake";
   bodySection.id = "body-section-snake";
@@ -53,6 +53,12 @@ export const snakePage = () => {
   gameOver.id = "gameOver";
   gameOver.textContent = "Has perdido!!!";
   boardInfo.appendChild(gameOver);
+
+  // Mensaje de inicio
+  const startMessage = document.createElement("div");
+  startMessage.id = "startMessage";
+  startMessage.textContent = "Presione Enter para empezar";
+  boardInfo.appendChild(startMessage);
 
   //Funcionalidad del juego
   playSnake();

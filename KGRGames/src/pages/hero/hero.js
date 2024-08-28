@@ -9,18 +9,18 @@ export const createHero = () => {
 
 export const heroPage = () => {
 
-  //Seccion
+  //Sección
   const heroSection = document.createElement("section");
   heroSection.className = "heroSection";
   divApp.appendChild(heroSection);
 
-  //Titulo de seccion
+  //Titulo de sección
   const sectionTitlle = document.createElement("h1");
   sectionTitlle.classList = "section-tittle";
   sectionTitlle.innerText = "Game Hub";
   heroSection.appendChild(sectionTitlle);
 
-  //Cuerpo de la seccion
+  //Cuerpo de la sección
   const bodySection = document.createElement("div");
   bodySection.className = "bodySectionHero";
   bodySection.id = "body-section-hero";
