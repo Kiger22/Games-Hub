@@ -29,7 +29,7 @@ export const tresEnRayaPage = () => {
 
   const currentPlayerHeading = document.createElement("h4");
   currentPlayerHeading.className = "shift"
-  currentPlayerHeading.innerHTML = 'TURNO:<br><br>Jugador <span id="current-player">1</span>';
+  currentPlayerHeading.innerHTML = 'TURNO: Jugador <span id="current-player">1</span>';
   aside.appendChild(currentPlayerHeading);
 
   const resultHeading = document.createElement("h4");

@@ -67,3 +67,27 @@
   background-color: var(--kg-bg-secondary);
   color: var(--kg-text-primary);
 }
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* Estilos para móviles */
+@media (max-width: 767px) {
+  .aside{
+    gap: var(--kg-gap-xs);
+  }
+  .score-container{
+    gap: var(--kg-gap-xs);
+  }
+  .tresEnRaya-Section{
+    gap: var(--kg-gap-md);
+  }
+  .bodySection{
+  gap: var(--kg-gap-md);
+  }
+  .shift{
+
+  }
+  }
