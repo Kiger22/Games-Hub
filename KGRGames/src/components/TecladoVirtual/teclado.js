@@ -3,7 +3,7 @@ import "./teclado.css";
 
 
 
-export const createKeyboard = (onKeyPressCallback) => {
+export const createKeyboard = (onKeyPressCallback, handlers) => {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
   const keys = [];
   const node = document.querySelector(".hangmanSection");
@@ -42,5 +42,8 @@ export const createKeyboard = (onKeyPressCallback) => {
       key.classList.remove("key-disabled");
     });
   };
-  window.resetKeyboard = resetKeyboard;
+
+  if (handlers) {
+    handlers.resetKeyboard = resetKeyboard;
+  }
 };

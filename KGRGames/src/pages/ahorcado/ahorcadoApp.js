@@ -43,12 +43,12 @@ export const startGame = () => {
   updateScoreDisplay();
   updateSecretWord();
 
-  if (typeof resetKeyboard === "function") {
-    resetKeyboard(); // Reinicia el teclado si ya existe
+  const keyboardHandlers = {};
+  if (keyboardHandlers.resetKeyboard) {
+    keyboardHandlers.resetKeyboard();
   } else {
-    createKeyboard(handleKeyPress); // Crea el teclado y lo añade al DOM
+    createKeyboard(handleKeyPress, keyboardHandlers);
   }
-
 
   window.addEventListener("keypress", handleKeyPress);
 };
