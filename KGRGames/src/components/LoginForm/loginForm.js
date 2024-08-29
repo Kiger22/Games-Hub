@@ -1,9 +1,12 @@
 import { divApp } from "../../../main";
 import "./loginForm.css"
 
-export const createLoginForm = () => {
-
+export const createLogin = () => {
   divApp.innerHTML = "";
+  createLoginForm();
+}
+
+export const createLoginForm = () => {
 
   const container = document.createElement("div");
   container.classList.add("container");
@@ -32,7 +35,7 @@ export const createLoginForm = () => {
 
   const forgotPasswordLink = document.createElement("a");
   forgotPasswordLink.href = "#";
-  forgotPasswordLink.textContent = "He olvidado la contraeña?";
+  forgotPasswordLink.textContent = "He olvidado la contraseña?";
   form.appendChild(forgotPasswordLink);
 
   container.appendChild(form);

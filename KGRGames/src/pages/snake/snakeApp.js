@@ -22,7 +22,8 @@ export const playSnake = () => {
   let snake;
   let score = 0;
   let maxScore = localStorage.getItem("maxScore") || 0;
-  let direction = localStorage.getItem("direction") || "ArrowRight";
+  //let direction = localStorage.getItem("direction") || "ArrowRight";
+  let direction = "ArrowRight";
   let boardSquares;
   let emptySquares;
   let moveInterval;
@@ -105,7 +106,7 @@ export const playSnake = () => {
   // Establece la nueva dirección de la serpiente
   const setDirection = newDirection => {
     direction = newDirection;
-    localStorage.setItem("direction", newDirection);
+    //localStorage.setItem("direction", newDirection);
   }
 
   // Controla los eventos de teclado para cambiar la dirección
@@ -126,6 +127,29 @@ export const playSnake = () => {
     }
   }
 
+  const controlMove = () => {
+    // Seleccionar los botones de dirección
+    const upBtn = document.getElementById("upBtn");
+    const downBtn = document.getElementById("downBtn");
+    const leftBtn = document.getElementById("leftBtn");
+    const rightBtn = document.getElementById("rightBtn");
+
+    upBtn.addEventListener("click", () => {
+      if (direction !== "ArrowDown") setDirection("ArrowUp");
+    });
+
+    downBtn.addEventListener("click", () => {
+      if (direction !== "ArrowUp") setDirection("ArrowDown");
+    });
+
+    leftBtn.addEventListener("click", () => {
+      if (direction !== "ArrowRight") setDirection("ArrowLeft");
+    });
+
+    rightBtn.addEventListener("click", () => {
+      if (direction !== "ArrowLeft") setDirection("ArrowRight");
+    });
+  }
 
   // Crea comida aleatoriamente en el tablero
   const createRandomFood = () => {
@@ -183,10 +207,12 @@ export const playSnake = () => {
   // Inicializa el juego cuando se carga la página
   const initializeGame = () => {
     setGame();
+    controlMove();
     startButton.addEventListener("click", startGame);
     document.addEventListener("keydown", (event) => {
       if (event.key === "Enter") {
         startGame();
+        controlMove();
       }
     }, { once: true });
   }

@@ -1,3 +1,4 @@
+import { createKeyboard } from "../../components/TecladoVirtual/teclado";
 import { WORDS } from "../../data/ahorcadoWords";
 
 const words = WORDS;
@@ -8,6 +9,8 @@ let correctLetters = [];
 let incorrectLetters = [];
 let wins = localStorage.getItem("wins") ? parseInt(localStorage.getItem("wins")) : 0;
 let losses = localStorage.getItem("losses") ? parseInt(localStorage.getItem("losses")) : 0;
+
+let keyboard;
 
 // Actualizar Scores
 const updateScoreDisplay = () => {
@@ -39,6 +42,14 @@ export const startGame = () => {
 
   updateScoreDisplay();
   updateSecretWord();
+
+  if (typeof resetKeyboard === "function") {
+    resetKeyboard(); // Reinicia el teclado si ya existe
+  } else {
+    createKeyboard(handleKeyPress); // Crea el teclado y lo añade al DOM
+  }
+
+
   window.addEventListener("keypress", handleKeyPress);
 };
 

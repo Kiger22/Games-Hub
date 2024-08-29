@@ -48,7 +48,7 @@
 }
 
 #message {
-  margin-top: 20px;
+  margin:15px auto;
   font-size: var(--kg-font-size-text);
 }
 
@@ -77,13 +77,27 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .bodySectionHangman{
     grid-template-columns: 1fr;
+    gap: var(--kg-gap-md);
   }
 }
 
 /* Estilos para móviles */
 @media (max-width: 767px) {
+  .hangmanSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--kg-gap-xs);
+    height: 80%;
+  }
+
   .bodySectionHangman{
     grid-template-columns: 1fr;
+    gap: var(--kg-gap-xs);
+  }
+  .bodyGameHangman{
+    margin-top: 0;
+    gap: var(--kg-gap-xs);
   }
   #secret-word {
     font-size: var(--kg-font-size-link);

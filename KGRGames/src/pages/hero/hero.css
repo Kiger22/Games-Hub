@@ -55,7 +55,7 @@ height: 80%;
 
 /* Estilos para móviles */
 @media (max-width: 767px) {
-  .heroSection{
-margin-bottom: 200px;
+    .bodySectionHero{
+      padding-bottom: var(--kg-padding-xxl);
     }
 }

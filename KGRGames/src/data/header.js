@@ -1,5 +1,4 @@
-
-import { createLoginForm } from "../components/LoginForm/loginForm";
+import { createLogin } from "../components/LoginForm/loginForm";
 import { createHero } from "../pages/hero/hero";
 
 export const menuItemsMenuToggle = [
@@ -8,13 +7,13 @@ export const menuItemsMenuToggle = [
 
 export const menuItemsHeaderI = [
   {
-    icon: "./assets/user-minus.svg", text: "Login", href: createLoginForm,
+    icon: "./assets/user-minus.svg", text: "Login", href: createLogin, page: createLogin,
   },
   {
-    icon: "./assets/icons8-casa.svg", text: "Home", href: createHero,
+    icon: "./assets/icons8-casa.svg", text: "Home", href: createHero, page: createHero,
   },
   {
-    icon: "./assets/pause-circle_10436074.svg", text: "Pause", href: createLoginForm,
+    icon: "./assets/pause-circle_10436074.svg", text: "Pause", href: "#", page: null,
   }
 ];
 

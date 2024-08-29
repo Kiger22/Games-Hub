@@ -41,9 +41,9 @@
 #controls button {
   background-color:var(--kg-color-tertiary);
   color: var(--kg-color-secondary);
-  font-size: var(--kg-font-size-link);
+  font-size: var(--kg-font-size-text);
   border: none;
-  padding: var(--kg-padding-xs);
+  padding:0 var(--kg-padding-xs);
   border-radius: var(--kg-radius-md);
   cursor: pointer;
 }
@@ -65,12 +65,7 @@
   grid-row: 2/3;
 }
 
-
 #startMessage {
-/*   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   font-size: var(--kg-font-size-text);
   color: var(--kg-color-tertiary);
   visibility: visible;
@@ -134,7 +129,16 @@
 }
 /* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
- 
+  #bodyControls{
+    display: block;
+  }
+  .bodySectionSnake{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: var(--kg-gap-xl);
+  }
 }
 
 /* Estilos para móviles */

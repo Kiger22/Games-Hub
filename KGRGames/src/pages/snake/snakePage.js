@@ -38,38 +38,38 @@ export const snakePage = () => {
   controlsContainer.id = "controls";
   bodyControls.appendChild(controlsContainer);
 
-  const setDirection = (newDirection) => {
+  /* const setDirection = (newDirection) => {
     localStorage.setItem("direction", newDirection);
-  };
+  }; */
 
   // Crear botones de flechas
   const upBtn = document.createElement("button");
   upBtn.id = "upBtn";
   upBtn.innerHTML = "▲";
-  upBtn.addEventListener("click", () => {
+  /* upBtn.addEventListener("click", () => {
     setDirection("ArrowUp");
-  });
+  }); */
 
   const downBtn = document.createElement("button");
   downBtn.id = "downBtn";
   downBtn.innerHTML = "▼";
-  downBtn.addEventListener("click", () => {
+  /* downBtn.addEventListener("click", () => {
     setDirection("ArrowDown");
-  });
+  }); */
 
   const leftBtn = document.createElement("button");
   leftBtn.id = "leftBtn";
   leftBtn.innerHTML = "◀";
-  leftBtn.addEventListener("click", () => {
+  /* leftBtn.addEventListener("click", () => {
     setDirection("ArrowLeft");
-  });
+  }); */
 
   const rightBtn = document.createElement("button");
   rightBtn.id = "rightBtn";
   rightBtn.innerHTML = "▶";
-  rightBtn.addEventListener("click", () => {
+  /* rightBtn.addEventListener("click", () => {
     setDirection("ArrowRight");
-  });;
+  });; */
 
   // Agregar botones al contenedor
   controlsContainer.appendChild(upBtn);
@@ -101,17 +101,17 @@ export const snakePage = () => {
   startButton.textContent = "Jugar";
   boardInfo.appendChild(startButton);
 
-  // Contenedor "Game Over"
-  const gameOver = document.createElement("div");
-  gameOver.id = "gameOver";
-  gameOver.textContent = "Has perdido!!!";
-  boardInfo.appendChild(gameOver);
-
   // Mensaje de inicio
   const startMessage = document.createElement("div");
   startMessage.id = "startMessage";
   startMessage.textContent = "Presione Enter para empezar";
   boardInfo.appendChild(startMessage);
+
+  // Contenedor "Game Over"
+  const gameOver = document.createElement("div");
+  gameOver.id = "gameOver";
+  gameOver.textContent = "Has perdido!!!";
+  boardInfo.appendChild(gameOver);
 
   //Funcionalidad del juego
   playSnake();

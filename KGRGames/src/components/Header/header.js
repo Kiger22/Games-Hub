@@ -20,7 +20,7 @@ export const createHeader = (logoSrc, menuItems, menuItemsII) => {
   menuSection.className = "header-menu";
   menuItems.forEach(item => {
     const link = document.createElement("a");
-    link.href = item.href;
+    //link.href = item.href;
     if (item.page) {
       link.addEventListener("click", item.page)
     }

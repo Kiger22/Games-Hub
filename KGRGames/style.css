@@ -44,8 +44,10 @@
   --kg-gap-lg: 30px;
   --kg-gap-md: 20px;
   --kg-gap-sm: 10px;
+  --kg-gap-xs: 5px;
 
   /* Padding */
+  --kg-padding-xxl:100px;
   --kg-padding-xl: 60px;
   --kg-padding-lg: 30px;
   --kg-padding-md: 20px;
