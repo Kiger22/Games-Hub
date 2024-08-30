@@ -1,27 +1,26 @@
 #keyboard {
   display: none;
- 
 }
 
 .key {
-  padding: 10px;
-  font-size: 16px;
+  padding: var(--kg-padding-sm);
+  font-size: var(--kg-font-size-link);
   text-transform: uppercase;
   cursor: pointer;
   border: 2px solid #333;
   border-radius: 5px;
-  background-color: #f0f0f0;
+  background-color: var(--kg-bg-secondary);
   transition: background-color 0.3s;
 }
 
-.tecla:hover {
-  background-color: #ddd;
+.key:hover {
+  background-color: var(--kg-bg-tertiary);
 }
 
-.tecla-desactivada {
-  background-color: #bbb;
+.key-disabled {
+  background-color:var(--kg-bg-light);
   cursor: not-allowed;
-  border-color: #999;
+  border-color: var(--kg-bg-primary);
 }
 
 /* Estilos para tablets */

@@ -43,7 +43,5 @@ export const createKeyboard = (onKeyPressCallback, handlers) => {
     });
   };
 
-  if (handlers) {
-    handlers.resetKeyboard = resetKeyboard;
-  }
+  window.resetKeyboard = resetKeyboard;
 };

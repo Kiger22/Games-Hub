@@ -43,11 +43,10 @@ export const startGame = () => {
   updateScoreDisplay();
   updateSecretWord();
 
-  const keyboardHandlers = {};
-  if (keyboardHandlers.resetKeyboard) {
-    keyboardHandlers.resetKeyboard();
+  if (typeof resetKeyboard === "function") {
+    resetKeyboard();
   } else {
-    createKeyboard(handleKeyPress, keyboardHandlers);
+    createKeyboard(handleKeyPress);
   }
 
   window.addEventListener("keypress", handleKeyPress);
@@ -72,7 +71,7 @@ const updateSecretWord = () => {
 
 // Maneja las teclas presionadas
 const handleKeyPress = (e) => {
-  const letter = e.key.toLowerCase();
+  const letter = e.toLowerCase();
 
   if (correctLetters.includes(letter) || incorrectLetters.includes(letter)) {
     return;
